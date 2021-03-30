@@ -6,7 +6,7 @@ $primary-color: #3B5F9D;
   padding: 0;
   font-family: Arial, Helvetica, sans-serif;
 }
-
+//////////Navbar Start//////////////////////
 .navbar{
   background-color: $primary-color;
   .img-fluid{
@@ -18,6 +18,9 @@ $primary-color: #3B5F9D;
     cursor: pointer;
   }
 }
+//////////Navbar End///////////////////////
+
+/////////Side Navbar Start/////////////////
 .MuiPaper-root{
   background-color: $primary-color !important;
   color: #ffffff !important;
@@ -49,7 +52,10 @@ $primary-color: #3B5F9D;
   color: red;
   animation: blink 2s infinite;
   font-weight: bolder;
-  padding: 0 70px;
+}
+.fa-graduation-cap{
+  margin-right: 35px;
+  margin-left: 5px;
 }
 @keyframes blink{
   0% {color: red;}
@@ -58,6 +64,9 @@ $primary-color: #3B5F9D;
   75% {color: green;}
   100% {color: red;}
 }
+//////////Side Navbar End///////////////////
+
+/////////Dashboard Start////////////////////
 .card{
   background-color: $primary-color !important;
   color: #ffffff;
@@ -66,6 +75,8 @@ $primary-color: #3B5F9D;
     text-align: justify;
   }
 }
+////////Dashboard End/////////////////////////
+
 .page-heading{
   margin: 40px 0 0 50px;
   color: $primary-color;
@@ -73,3 +84,99 @@ $primary-color: #3B5F9D;
   border-left: 4px solid $primary-color;
   text-shadow: 1px 1px 3px #000;
 }
+
+////////Login Page Start/////////////////////
+#login-page{
+  h1{
+    color: $primary-color;
+    text-align: center;
+    margin-bottom: 0;
+  }
+  p{
+    color: $primary-color;
+    text-align: center;
+  }
+  form{
+    padding: 60px 50px 0;
+    .form-control{
+      border: none;
+      box-shadow: none;
+      border-bottom: 2px solid $primary-color;
+      border-radius: 0;
+    }
+    .btn-login{
+      background-image: linear-gradient( to right, #3B5F9D,  #637aa3);
+      color: #ffffff;
+      border: none;
+      padding: 2px 80px;
+      border-radius: 5px;
+      display: flex;
+      margin: 70px auto 40px;
+    }
+  }
+  .links{
+    color: $primary-color;
+    margin: 0 auto;
+    text-transform: capitalize;
+  }
+}
+@media screen and (max-width: 500px) {
+  #login-page{
+    form{
+      padding: 40px 0 0;
+      }
+      .btn-login{
+        padding: 2px 30px;
+        margin: 20px auto;
+      }
+    }
+  }
+////////Login Page End///////////////////////
+
+////////Login Page Start/////////////////////
+#registration-page{
+  h1{
+    color: $primary-color;
+    text-align: center;
+    margin-bottom: 0;
+  }
+  p{
+    color: $primary-color;
+    text-align: center;
+  }
+  form{
+    padding: 60px 50px 0;
+    .form-control{
+      border: none;
+      box-shadow: none;
+      border-bottom: 2px solid $primary-color;
+      border-radius: 0;
+    }
+    .btn-login{
+      background-image: linear-gradient( to right, #3B5F9D,  #637aa3);
+      color: #ffffff;
+      border: none;
+      padding: 2px 80px;
+      border-radius: 5px;
+      display: flex;
+      margin: 70px auto 40px;
+    }
+  }
+  .links{
+    color: $primary-color;
+    margin: 0 auto;
+    text-transform: capitalize;
+  }
+}
+@media screen and (max-width: 500px) {
+  #login-page{
+    form{
+      padding: 40px 0 0;
+      }
+      .btn-login{
+        padding: 2px 30px;
+        margin: 20px auto;
+      }
+    }
+  }
+////////Login Page End///////////////////////

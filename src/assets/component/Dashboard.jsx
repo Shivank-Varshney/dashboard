@@ -1,5 +1,6 @@
 import React from "react";
 import DashboardIllustration from "../image/dashboard illustration.png";
+import Navbar from "./Navbar";
 import Card1 from "../image/ill1.png";
 import Card2 from "../image/ill2.png";
 import Card3 from "../image/ill3.png";
@@ -10,6 +11,7 @@ import Card6 from "../image/ill6.png";
 const Dashboard = () => {
     return(
         <React.Fragment>
+            <Navbar />
             <section className="container">
                 <div className="row my-5">
                     <div className="col-md-6"></div>

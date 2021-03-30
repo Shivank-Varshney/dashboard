@@ -7,7 +7,7 @@ const Navbar = () => {
     return(
         <React.Fragment>
             <nav className="navbar rainy-ashville-gradient px-4">
-                <NavLink className="navbar-brand" to="/">
+                <NavLink className="navbar-brand" to="/dashboard">
                     <img src={Logo} alt="Logo" className="img-fluid" />
                 </NavLink>
                 <Toggler />

@@ -5,16 +5,20 @@ import Income from "./assets/component/Income";
 import PaymentHistory from "./assets/component/PaymentHistory";
 import ContactUs from "./assets/component/ContactUs";
 import FreeLink from "./assets/component/FreeLink";
-import Navbar from "./assets/component/Navbar";
+import Home from "./assets/component/Home";
+import Login from "./assets/component/Login";
+import Registration from "./assets/component/Registration";
 import {Redirect, Route, Switch } from 'react-router-dom'; 
 import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
 
 const App = () => {
   return(
-    <React.Fragment>
-        <Navbar/> 
+    <React.Fragment> 
         <Switch> 
-            <Route exact path='/' component={Dashboard} /> 
+            <Route exact path='/' component={Home} />
+            <Route exact path='/login' component={Login} /> 
+            <Route exact path='/registration' component={Registration} />
+            <Route exact path='/dashboard' component={Dashboard} />
             <Route exact path='/team' component={Team} />
             <Route exact path='/income' component={Income} /> 
             <Route exact path='/paymenthistory' component={PaymentHistory} /> 

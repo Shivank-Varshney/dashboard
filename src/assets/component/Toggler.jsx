@@ -50,9 +50,9 @@ link: {
             <div onClick={toggleDrawer(anchor, false)}>
 				<p className="sidenav-title" >User Name</p>
 				<p className="sidenav-subtitle">User Id</p>
-				<Menu menuNameAddress = "/" menuIcon = {<DashboardIcon />} menuName = "dashboard" />
+				<Menu menuNameAddress = "/dashboard" menuIcon = {<DashboardIcon />} menuName = "dashboard" />
         <Menu menuNameAddress = "/freelink" menuIcon = {<LinkIcon />} menuName = "send free link" />
-        <span className="act">Activate Now</span>
+        <span className="act btn"><i className="fa fa-graduation-cap" aria-hidden="true"></i> Activate Now</span>
 				<Menu menuNameAddress = "/team" menuIcon = {<GroupIcon />} menuName = "team" />
 				<Menu menuNameAddress = "/income" menuIcon = {<CreditCardIcon />} menuName = "income" />
 				<Menu menuNameAddress = "/paymenthistory" menuIcon = {<AssignmentIcon />} menuName = "payment history" />
